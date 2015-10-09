@@ -76,7 +76,6 @@ void aussie_vote_solve (istream& r, ostream& w) {
         std::fill (in.begin(),in.begin()+candidates, true);
         cerr << "candidates=" << candidates << endl;
 
-        // Skip to sart of next line so first candidate's name doesn't become "":
         // http://stackoverflow.com/questions/477408/ifstream-end-of-line-and-move-to-next-line
         r.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
         //cerr << "candidates=" << rounds << endl;
